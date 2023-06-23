@@ -56,7 +56,8 @@ CHARACTER(LEN=120) :: HISTOGRAM_FILE = 'HISTOGRAM_Ex_Data_2.dat'
 !Number of datapoints known in the file.
 INTEGER(KIND = IDP), PARAMETER :: N = 10000
 
-!Parameters to set the histograms characteristics 
+!Parameters to set the histograms characteristics
+ 
 REAL(KIND = DP), PARAMETER :: BIN_SIZE = 0.5
 !With this variable you can set the size of the bins. !To be printed fully is necessary to configure the amount of characters to be printed at lines 113 and 120
 
