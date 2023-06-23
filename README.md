@@ -46,10 +46,9 @@ gfortran FastHistograms_6.f90 -o FastHistograms_6
 # How to use it
 In order to use the code the following variables need to be manually set by the user before compiling and executing the programme
 
-!####
-!Name of the file with the data that is to be sorted in a histogram.
 
-CHARACTER(LEN=120) :: DATAFILE_OF_INTEREST ='Ex_Data_2.dat'
+!Name of the file with the data that is to be sorted in a histogram.
+CHARACTER(LEN=120) :: DATAFILE_OF_INTEREST = 'Ex_Data_2.dat'
 
 !Name of the file where the bins and height are stores, i.e. the histogram
 CHARACTER(LEN=120) :: HISTOGRAM_FILE = 'HISTOGRAM_Ex_Data_2.dat'
@@ -58,10 +57,17 @@ CHARACTER(LEN=120) :: HISTOGRAM_FILE = 'HISTOGRAM_Ex_Data_2.dat'
 INTEGER(KIND = IDP), PARAMETER :: N = 10000
 
 !Parameters to set the histograms characteristics 
-REAL(KIND = DP), PARAMETER :: BIN_SIZE = 0.5 !With this variable you can set the size of the bins. !To be printed fully is necessary to configure the amount of characters to be printed at lines 113 and 120
-REAL(KIND = DP), PARAMETER :: CENTRAL_VALUE = 0.0 !With this variable you set the central value of the histogram, by default it can be left set at 0.0.
-REAL(KIND = DP), PARAMETER :: RIGHT_BOUND = 10 !With this variable you set the maximum value of the data to be considered while creating the histogram.
-REAL(KIND = DP), PARAMETER :: LEFT_BOUND = -10 !With this variable you set the minimum value of the data to be considered while creating the histogram, if negative the minus has to be included in the stated value.
+REAL(KIND = DP), PARAMETER :: BIN_SIZE = 0.5
+!With this variable you can set the size of the bins. !To be printed fully is necessary to configure the amount of characters to be printed at lines 113 and 120
+
+REAL(KIND = DP), PARAMETER :: CENTRAL_VALUE = 0.0
+!With this variable you set the central value of the histogram, by default it can be left set at 0.0.
+
+REAL(KIND = DP), PARAMETER :: RIGHT_BOUND = 10
+!With this variable you set the maximum value of the data to be considered while creating the histogram.
+
+REAL(KIND = DP), PARAMETER :: LEFT_BOUND = -10
+!With this variable you set the minimum value of the data to be considered while creating the histogram, if negative the minus has to be included in the stated value.
 
 # Test datafile
 In order for the user to give it a try along side this programme you can find two datasets named Ex_Data.dat and Ex_Data_2.dat each of those files contains 10,000 lines each containing a value. You can determine the statistics of such datasets by using the code. 
