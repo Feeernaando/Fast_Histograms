@@ -48,12 +48,11 @@ In order to use the code the following variables need to be manually set by the 
 
 !####
 !Name of the file with the data that is to be sorted in a histogram.
-CHARACTER(LEN=120) :: DATAFILE_OF_INTEREST = &
-'Ex_Data_2.dat'
+
+CHARACTER(LEN=120) :: DATAFILE_OF_INTEREST ='Ex_Data_2.dat'
 
 !Name of the file where the bins and height are stores, i.e. the histogram
-CHARACTER(LEN=120) :: HISTOGRAM_FILE = &
-'HISTOGRAM_Ex_Data_2.dat'
+CHARACTER(LEN=120) :: HISTOGRAM_FILE = 'HISTOGRAM_Ex_Data_2.dat'
 
 !Number of datapoints known in the file.
 INTEGER(KIND = IDP), PARAMETER :: N = 10000
